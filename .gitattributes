@@ -1,0 +1,25 @@
+# Set default to LF for all text files
+* text=auto eol=lf
+
+# Force Windows batch files to use CRLF
+*.cmd text eol=crlf
+*.bat text eol=crlf
+
+# Force shell scripts to use LF
+*.sh text eol=lf
+
+# Force Maven wrapper script to use LF (usually .mvnw is a shell script)
+mvnw text eol=lf
+
+# Force Maven wrapper properties to LF (config files are sensitive to CRLF)
+*.properties text eol=lf
+
+# YAML files (used in Spring Boot) — should use LF
+*.yml text eol=lf
+*.yaml text eol=lf
+
+# Java source files — use LF
+*.java text eol=lf
+
+# XML files (like pom.xml) — use LF
+*.xml text eol=lf

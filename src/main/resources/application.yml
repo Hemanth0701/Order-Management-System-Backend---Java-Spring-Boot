@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: order_management_system
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/oms
+    username: Hemant
+    password: hemanth0701
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+
+jwt:
+  secret: MjAyNUdyYXd2eGhSLVBienpyZXByX2JqYWpycV9vbF9VcnpuYWd1X1hoem5lX3puYW5idG5lbmFfT25hdG55YmVyNg==
+  expiration: 3600000
